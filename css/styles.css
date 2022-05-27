@@ -514,7 +514,6 @@ footer {
 }
 
 footer .logo {
-	display: inline-block;
 	margin-bottom: 20px;
 	color: #ffffff;
 }
@@ -601,6 +600,10 @@ footer .contacts:focus {
 	font-size: 16px;
 	line-height: 1.25;
 	letter-spacing: 0.03em;
+}
+.footer-input:hover,
+.footer-input:focus {
+	outline: none;
 }
 
 .footer-submit-button {
@@ -734,10 +737,10 @@ footer .contacts:focus {
 }
 
 .form-input:hover,
-.form-input:focus,
-.form-input:not(:placeholder-shown) {
+.form-input:focus {
 	border: 1px solid var(--accent-color);
 	cursor: pointer;
+	outline: none;
 }
 
 .form-icon {
@@ -749,8 +752,7 @@ footer .contacts:focus {
 }
 
 .form-input:hover + .form-icon,
-.form-input:focus + .form-icon,
-.form-input:not(:placeholder-shown) + .form-icon {
+.form-input:focus + .form-icon {
 	fill: var(--accent-color);
 }
 
@@ -769,10 +771,10 @@ footer .contacts:focus {
 }
 
 .form-textarea:hover,
-.form-textarea:focus,
-.form-textarea:not(:placeholder-shown) {
+.form-textarea:focus {
 	border: 1px solid var(--accent-color);
 	cursor: pointer;
+	outline: none;
 }
 
 .form-textarea::placeholder {
@@ -783,11 +785,14 @@ footer .contacts:focus {
 }
 
 .form-policy {
+	margin-bottom: 30px;
+}
+
+.policy-label {
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 30px;
 }
 
 .checkbox-icon {
@@ -804,8 +809,7 @@ footer .contacts:focus {
 	background-color: var(--accent-color);
 	border-color: var(--accent-color);
 }
-
-.policy-label {
+.policy-text {
 	padding-left: 20px;
 }
 
